@@ -1,0 +1,79 @@
+! Fonts ===========================================
+! font, fontsize, and title
+XTerm*faceName: DejaVuSansMono
+XTerm*faceSize: 8
+XTerm*title: frieza
+
+! Cursor ===========================================
+! pointer and cursor (blinking and color)
+XTerm*pointerColor: white
+XTerm*pointerColorBackground: black
+XTerm*cursorColor: white
+XTerm*cursorBlink: true
+
+! Selecting Text ===================================
+! Only select test
+XTerm*highlightSelection: true
+! Remove trailing spaces
+XTerm*trimSelection: true
+
+! Scrolling ==========================================
+! Lines of output for scroll back
+XTerm*saveLines: 16384
+
+! Turn on scrollbar
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true
+
+! Keybinding =========================================
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+
+! Theme: {{{
+!=====================================================
+*background: #ffffff
+*foreground: #9f1aea
+!*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
+
+! black dark/light
+*color0: #073642
+*color8: #002b36
+
+! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+
+! green dark/light
+*color2: #859900
+*color10: #c8e600
+
+! yellow dark/light
+*color3: #b58900
+*color11: #ffc202
+
+! blue dark/light
+*color4: #268bd2
+*color12: #62ade3
+
+! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+
+! cyan dark/light
+*color6: #2aa198
+*color14: #48cfc5
+
+! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
+
+! }}}

@@ -1,0 +1,6 @@
+#!/bin/tcsh
+
+cp /usr/home/kymafur/.config/awesome/termthemes/Xgohan /usr/home/kymafur/.Xresources
+xrdb -load /usr/home/kymafur/.Xresources
+echo 'rofi.theme: /usr/home/kymafur/.config/rofi/gohantheme' > .config/rofi/config
+
