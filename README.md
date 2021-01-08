@@ -7,7 +7,7 @@
     git clone https://github.com/kyma-fur/FreeBSD.git
 
 ### configuration
-    This configuration assumes you have awesomewm, rofi, xterm, and devilspie installed
+    This configuration assumes you have awesomewm, rofi, xterm, xcompmgr and devilspie installed
 
     copy files to your home directory (This may overwrite your current configs)
 
@@ -18,7 +18,7 @@
     cp Xresources ~/.Xresources
     cp -r devilspie/main.ds ~/.devilspie/main.ds
 
-    open ~/.config/awesome/rc.lua with your favorite editor and modify all of the usr paths with your path.
+    open ~/.config/awesome/rc.lua with your favorite editor and modify all of the usr paths with your path
     example: 
         gears.wallpaper.maximized("/usr/home/kymafur/Pictures/goku-1.jpg")
     to:
